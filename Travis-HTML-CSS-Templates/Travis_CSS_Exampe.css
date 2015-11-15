@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    color: lightblue;
+}
+
+a:visited {
+    color: darkgreen;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color: blue;
+}
+
+.color {
+    color: rgb(42, 205, 195);
+}
+
+.header {
+    margin: auto;
+    width: 50%;
+    height: 10%;
+}
+
+.header .intro {
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px;
+    margin-top: 8px;
+    border-bottom: 2px double rgb(49, 57, 173);
+    border-bottom: 2px double rgba(49, 57, 173, 0.7);
+}
+
+.header .intro:hover {
+    animation: blinking-and-color 4s ease-in-out infinite;
+    font-size: 250%;
+    font-family: fantasy;
+}
+
+@keyframes blinking-and-color {
+    25% {
+        opacity: 0.75;
+        color: hotpink;
+    }
+    50% {
+        opacity: 0.50;
+        color: darkred;
+    }
+    75% {
+        opacity: 0.25;
+        color: lightgreen;
+    }
+    100% {
+        opacity: 0.0;
+        color: darkorange;
+    }
+}
+
+.article-body {
+    margin: auto;
+    height:auto;
+}
+
+.col-header {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.first-table {
+    color: black;
+}
+
+.first-table th {
+    color: white;
+    background-color: black;
+    width: 100%;
+}
+
+.first-table tr:nth-child(2n+1) {
+    background-color: lightgrey;
+}
+
+.first-table tr:nth-child(2n) {
+    background-color: darkgrey;
+}
+
+.left-col {
+    float: left;
+    width: 25%;
+}
+
+.left-col .links {
+    margin: auto;
+    width: 80%;
+}
+
+.left-col .col-header {
+    border-bottom: 2px dashed rgb(57, 83, 191);
+    border-bottom: 2px dashed rgba(57, 83, 191, 0.79);
+}
+
+.left-col .unordered-lists {
+    color: black;
+}
+
+.left-col .ordered-lists {
+    color: black;
+}
+
+.right-col {
+    float: right;
+    width: 25%;
+}
+
+.right-col .videos {
+    margin: auto;
+    width: 80%;
+}
+
+.right-col .col-header {
+    border-bottom: 2px dotted rgb(227, 16, 155);
+    border-bottom: 2px dotted rgba(227, 16, 155, 0.93);
+}
+
+.center-col {
+    display: inline-block;
+    width: 50%;
+}
+
+.center-col .articles {
+    margin: auto;
+    width: 80%;
+}
+
+.center-col .col-header {
+    color: rgb(203, 143, 14);
+    border-bottom: 2px groove rgb(22, 184, 87);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px groove rgb(167, 203, 49);
+}
+
+.footer-header {
+    text-align: center;
+    color: rgb(200, 181, 114);
+    color: rgba(200, 181, 114, 0.86);
+}
+
+.footer-header:hover {
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+.copywrite {
+    color: black;
+    text-align: center;
+}
