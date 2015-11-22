@@ -21,6 +21,36 @@ body {
     border-bottom: 2px double rgb(116, 108, 182);
 }
 
+.header .intro:hover {
+    animation-name: danielles-animation;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    font-size: 300%;
+    font-family: fantasy;
+}
+
+@keyframes danielles-animation {
+    25% {
+        opacity: 0.75;
+        color: rgb(252, 76, 160);
+        color: rgba(252, 76, 160, 0.88);
+    }
+    50% {
+        opacity: 0.50;
+        color: rgb(163, 180, 230);
+    }
+    75% {
+        opacity: 0.25;
+        color: rgb(46, 195, 168);
+    }
+    100% {
+        opacity: 0.0;
+        color: rgb(226, 117, 16);
+        color: rgba(226, 117, 16, 0.99);
+    }
+}
+
 .article-body {
     margin: auto;
     height: auto;
@@ -36,14 +66,42 @@ body {
     width: 25%;
 }
 
+.left-col .links {
+    width: 80%;
+    margin: auto;
+}
+
+.left-col .col-header {
+    border-bottom: 2px dashed rgb(138, 9, 32);
+}
+
 .center-col {
     float: left;
     width: 50%;
 }
 
+.center-col .col-header {
+    border-bottom: 5px solid rgb(95, 153, 186);
+}
+
+.center-col .headlines {
+    width: 80%;
+    margin: auto;
+}
+
 .right-col {
     float: right;
     width: 25%;
+}
+
+.right-col .col-header {
+    border-bottom: 5px dotted rgb(13, 32, 158);
+    border-bottom: 5px dotted rgba(13, 32, 158, 0.97);
+}
+
+.right-col .other-news {
+    width: 80%;
+    margin: auto;
 }
 
 .footer {
