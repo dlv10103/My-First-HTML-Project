@@ -1,3 +1,71 @@
-body.color {
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.color {
     color: rgb(42, 205, 195)
+}
+
+.header {
+    margin: auto;
+    width: 50%;
+    height: 10%;
+}
+
+.header .intro {
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px;
+    margin-top: 8px;
+    border-bottom: 2px double rgb(116, 108, 182);
+}
+
+.article-body {
+    margin: auto;
+    height: auto;
+}
+
+.col-header {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.left-col {
+    float: left;
+    width: 25%;
+}
+
+.center-col {
+    float: left;
+    width: 50%;
+}
+
+.right-col {
+    float: right;
+    width: 25%;
+}
+
+.footer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    border-top: 2px groove rgb(172, 91, 140);
+    border-top: 2px groove rgba(172, 91, 140, 0.36);
+}
+
+.footer-header {
+    text-align: center;
+    color: rgb(63, 168, 76);
+    color: rgba(63, 168, 76, 0.62);
+}
+
+.footer-header:hover {
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+.copyright {
+    color: black;
+    text-align: center;
 }
