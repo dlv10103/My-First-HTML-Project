@@ -1,0 +1,148 @@
+.example-1 {
+    margin: auto;
+    color: tomato;
+    font-size: 100%;
+}
+
+.example-1 .italics {
+    font-style: italic;
+}
+
+.example-1 .flash-and-grow:hover {
+    animation-name: flash-and-grow;
+    animation-duration: 20s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flash-and-grow {
+    0% { opacity: 0.5; font-size: 50% }
+    5% { opacity: 0.0; font-size: 60% }
+    10% { opacity: 0.5; font-size: 70% }
+    15% { opacity: 1.0; font-size: 80% }
+    20% { opacity: 0.5; font-size: 90% }
+    25% { opacity: 0.0; font-size: 100% }
+    30% { opacity: 0.5; font-size: 110% }
+    35% { opacity: 1.0; font-size: 120% }
+    40% { opacity: 0.5; font-size: 130% }
+    45% { opacity: 0.0; font-size: 140% }
+    50% { opacity: 0.5; font-size: 150% }
+    55% { opacity: 1.0; font-size: 160% }
+    60% { opacity: 0.5; font-size: 170% }
+    65% { opacity: 0.0; font-size: 180% }
+    70% { opacity: 0.5; font-size: 190% }
+    75% { opacity: 0.0; font-size: 200% }
+    80% { opacity: 0.5; font-size: 210% }
+    85% { opacity: 1.0; font-size: 220% }
+    90% { opacity: 0.5; font-size: 230% }
+    95% { opacity: 0.0; font-size: 240% }
+    100% { opacity: 0.5; font-size: 250% }
+}
+
+.example-2 .font-color-example {
+    margin: auto;
+    animation: changing-color-font 10s ease-in-out infinite
+}
+
+@keyframes changing-color-font {
+    0% {
+        color: hotpink;
+        font-family: Papyrus, fantasy;
+        font-style: oblique;
+    }
+    25% {
+        color: chocolate;
+        font-family: "Lucida Console", Monaco, monospace;
+        font-style: normal;
+    }
+    50% {
+        color: red;
+        font-family: "Comic Sans MS";
+    }
+    75% {
+        color: mediumorchid;
+        font-family: "Arial Black";
+    }
+    100% {
+        color: steelblue;
+        font-family: Courier;
+    }
+}
+
+.example-3 {
+    margin: auto;
+    width: 100%;
+    height: 10%;
+    position: relative;
+    animation-name: moving-text;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes moving-text {
+    0% { color: aqua; left: 0; top: 0; }
+    25% { color: deeppink; left: 200px; top: 0; }
+    50% { color: goldenrod; left: 200px; top: 80px; }
+    75% { color: indigo; left: 0; top: 80px; }
+    100% { color: wheat; left: 0; top: 0; }
+
+}
+
+.example-4 {
+    margin: auto;
+    width: 20%;
+    height: 20%;
+}
+
+.example-4 .spinning-text {
+    padding: 50px;
+}
+
+.example-4 .spinning-text:hover {
+    animation: spinning-text 20s linear infinite;
+}
+
+@keyframes spinning-text {
+    5% { transform: rotate(18deg) }
+    10% { transform: rotate(36deg) }
+    15% { transform: rotate(54deg) }
+    20% { transform: rotate(72deg) }
+    25% { transform: rotate(90deg) }
+    30% { transform: rotate(108deg) }
+    35% { transform: rotate(126deg) }
+    40% { transform: rotate(144deg) }
+    45% { transform: rotate(162deg) }
+    50% { transform: rotate(180deg) }
+    55% { transform: rotate(198deg) }
+    60% { transform: rotate(216deg) }
+    65% { transform: rotate(234deg) }
+    70% { transform: rotate(252deg) }
+    75% { transform: rotate(270deg) }
+    80% { transform: rotate(288deg) }
+    85% { transform: rotate(306deg) }
+    90% { transform: rotate(324deg) }
+    95% { transform: rotate(342deg) }
+    100% { transform: rotate(360deg) }
+}
+
+.example-5 {
+    margin: auto;
+}
+
+.example-5 .fly-away-text {
+    width: 30%;
+    height: 100%;
+    animation: fly-away-text 4s linear 1;
+}
+
+@keyframes fly-away-text {
+    5% { left: 0; top: 0; transform: rotate(18deg) }
+    15% { left: 50px; top: 50px; transform: rotate(54deg) }
+    25% { left: 100px; top: 100px; transform: rotate(90deg) }
+    35% { left: 150px; top: 150px; transform: rotate(126deg) }
+    45% { left: 225px; top: 225px; transform: rotate(162deg) }
+}
