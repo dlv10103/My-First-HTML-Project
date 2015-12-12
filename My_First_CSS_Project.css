@@ -75,13 +75,58 @@ body {
     border-bottom: 2px dashed rgb(138, 9, 32);
 }
 
+.left-col .italics {
+    font-style: italic;
+}
+
+.left-col .col-header:hover {
+    font-style: italic;
+    text-decoration: underline;
+}
+
 .center-col {
     float: left;
     width: 50%;
 }
 
 .center-col .col-header {
+    border-top-color: white;
+    border-top-color: white;
+    border-top-width: 10px;
+    border-top-style: dotted;
     border-bottom: 5px solid rgb(95, 153, 186);
+    animation-name: thing;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 3;
+}
+
+@keyframes thing {
+    0% {
+        color: rgb(184, 14, 65);
+        color: rgba(184, 14, 65, 0.48);
+        font-weight: bolder;
+
+    }
+    20% {
+        color: rgb(34, 141, 244);
+        color: rgba(34, 141, 244, 0.61);
+        font-weight:lighter;
+
+    }
+    45% {
+        border-top-color: rgb(165, 88, 226);
+        border-top-color: rgba(165, 88, 226, 0.3);
+    }
+    75% {
+        background-color: steelblue;
+        border-style: groove;
+        border-width: medium;
+        border-color: rgb(179, 71, 177);
+    }
+    100% {
+        opacity: 0.0
+    }
 }
 
 .center-col .headlines {
@@ -97,6 +142,20 @@ body {
 .right-col .col-header {
     border-bottom: 5px dotted rgb(13, 32, 158);
     border-bottom: 5px dotted rgba(13, 32, 158, 0.97);
+}
+
+.right-col .col-header:hover {
+    border-bottom: 5px dotted rgb(13, 32, 158);
+    animation: moving-text 4s linear 1;
+}
+
+@keyframes moving-text {
+    0% { color: aqua; left: 0; top: 0; }
+    25% { color: deeppink; left: 200px; top: 0; }
+    50% { color: goldenrod; left: 200px; top: 80px; }
+    75% { color: indigo; left: 0; top: 80px; }
+    100% { color: wheat; left: 0; top: 0; }
+
 }
 
 .right-col .other-news {
